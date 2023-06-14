@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background: conic-gradient(from .5turn at 50% 110%, white, orange);
+}
+
+.container{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+
+.grocery{
+    /* border: 1px solid black; */
+
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    height: 100vh;
+    top: 7%;
+    box-shadow: 5px 15px 20px 15px rgba(0, 0, 0, 0.13);
+    
+
+}
+
+.nam h1{
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 4%;
+}
+
+.listAdd input{
+    outline: 0;
+    border: 0;
+    background: rgba(175, 175, 175, 0.007);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.listAdd input:focus {
+    border-bottom: 4px solid #555;
+  }
+
+
+.listAdd i{
+    font-size: 2rem;
+    padding: 4%;
+}
+
+.listAdd i:hover{
+    color: rgb(129, 122, 121);
+    
+}
+
+
+#allitems{
+    text-transform: uppercase;
+    margin: 30px;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 780px){
+    .grocery{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px){
+    .grocery{
+        width: 90%;
+    }
+    .listAdd input{
+        width: 70%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px){
+    .grocery{
+        width: 100%;
+    }
+    .listAdd input{
+        width: 50%;
+        font-size: 16px;
+    }
+}
